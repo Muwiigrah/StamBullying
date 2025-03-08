@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAM-BULLY | Login & Register</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-box">
+      <!-- Login Form (Default) -->
+      <div class="form login-form active" id="login-form">
+        <h2>STAM-BULLY</h2>
+        <p>Good to see you again! Sign in to start your journey.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="School Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn">Sign In</button>
+        </form>
+        <p class="switch">
+          Don't have an account?
+          <a href="#" id="switch-to-register">Register</a>
+        </p>
+      </div>
+
+      <!-- Registration Form (Hidden Initially) -->
+      <div class="form register-form" id="register-form">
+        <h2>Welcome to <span>STAM-BULLY</span></h2>
+        <p>Create your account and start your journey!</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="School Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Create Password" required>
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Re-enter Password" required>
+          </div>
+          <button type="submit" class="btn">Create Account</button>
+        </form>
+        <p class="switch">
+          Already have an account?
+          <a href="#" id="switch-to-login">Sign In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="javaa.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ab370; /* Green background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #FFF;
+    color: green;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/* Container for logo image and text */
+.logo-container {
+    display: flex;
+    align-items: center; /* Aligns image and text side by side */
+    gap: 10px; /* Adds space between image and text */
+}
+
+/* Adjust STAM-BULLY logo size */
+header img {
+    height: 60px; /* Adjust height to fit header */
+    width: auto; /* Keep aspect ratio */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+
+/* Align logo and text */
+header {
+    display: flex;
+    align-items: center; /* Align items in the center */
+    gap: 10px; /* Space between logo and text */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.login-btn {
+    background-color: gold;
+    border: none;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.report-title {
+    background-color: #007b3e; /* Green background */
+    color: #ffffff; /* White text for contrast */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.report-list {
+    background: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.report-item {
+    display: flex;
+    align-items: center;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.status {
+    width: 12px;
+    height: 12px;
+    background: gray;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status.active {
+    background: green;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message {
+    flex: 1;
+    text-align: left;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+    margin-right: 10px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}

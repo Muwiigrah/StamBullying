@@ -1,0 +1,114 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Report</title>
+    <link rel="stylesheet" href="createreportstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <a href="stopbullying2.html">
+            <img src="images/stambullylogo_nobg.png" alt="stambullylogo">
+        </a>
+        <h1 class="logo">STAM-BULLY</h1>
+    </div>
+    <nav>
+        <a href="tamservice.html" class="btn">TAM-Service</a>
+        <a href="typesofbullying.html" class="btn">What is Bullying?</a>
+        <a href="createreport.html" class="btn">Create Report</a>
+        <a href="reporthistory.html" class="btn">Report History</a>
+        <button class="btn login-btn" id="loginBtn">Log in</button>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="header">CREATE REPORT</div>
+        <p class="note">Note: You may choose to remain anonymous. If a question does not apply to you or you prefer not to answer, please write "N/A".</p>
+        <form id="reportForm">
+            <div class="form-group">
+                <label>What is your name?</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>What type of bullying occurred?</label>
+                <input type="text" name="bullying_type">
+            </div>
+            <div class="form-group">
+                <label>Were there any witnesses?</label>
+                <input type="text" name="witnesses">
+            </div>
+            <div class="form-group">
+                <label>What is your grade and section?</label>
+                <input type="text" name="grade_section">
+            </div>
+            <div class="form-group">
+                <label>When did the incident happen?</label>
+                <input type="date" name="incident_date">
+            </div>
+            <div class="form-group">
+                <label>Who is the offender?</label>
+                <input type="text" name="offender">
+            </div>
+            <div class="form-group">
+                <label>What is their grade and section?</label>
+                <input type="text" name="offender_grade_section">
+            </div>
+            <div class="form-group wide">
+                <label>Do you have any proof? (If yes, please attach)</label>
+                <input type="file" name="proof">
+            </div>
+            <div class="form-group wide">
+                <label>Describe what happened.</label>
+                <textarea name="description" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+
+
+			
+			
+        </form>
+    </div>
+    <script src="createreportscript.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to Reflect</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">TIME TO REFLECT</div>
+        <div class="content">
+            <div class="questions">
+                <p class="note">Now that you are done submitting the bullying report, take a moment to reflect on your emotions. This is a safe space for you to let out your feelings and process what happened. 💛</p>
+                
+                <label>1. What emotions are you feeling right now?</label>
+                <input type="text" id="q1" placeholder="Type your answer here">
+                <button class="submit-btn" onclick="submitAnswer('q1')">Submit</button>
+                
+                <label>2. What was the hardest part of this experience for you?</label>
+                <input type="text" id="q2" placeholder="Type your answer here">
+                <button class="submit-btn" onclick="submitAnswer('q2')">Submit</button>
+                
+                <label>3. If you could say anything to someone who truly understands, what would it be?</label>
+                <input type="text" id="q3" placeholder="Type your answer here">
+                <button class="submit-btn" onclick="submitAnswer('q3')">Submit</button>
+            </div>
+            <div class="board" id="reflectionBoard">
+                <p id="placeholderText" style="color: gray;">Your reflections will appear here...</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

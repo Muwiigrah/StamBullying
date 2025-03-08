@@ -1,0 +1,264 @@
+/* Apply League Spartan font */
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Import League Spartan from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+/* Apply League Spartan to Titles & Category Titles */
+h1, h2, h3, .category-title {
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Apply Arial to Other Text */
+body, p, .prevent-item {
+    font-family: Arial, sans-serif;
+}
+/* Ensure "STAM-BULLY" has no underline */
+.no-underline {
+    text-decoration: none; /* Removes underline */
+    border-bottom: none; /* Ensures no bottom border */
+}
+
+/* Extra Force to Remove Any Inherited Underline */
+.no-underline,
+.no-underline:link,
+.no-underline:visited,
+.no-underline:hover,
+.no-underline:active {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* Titles (Main Headings) */
+h1, h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: ; /* Bold for strong emphasis */
+    text-transform: uppercase and lowercase;
+    text-align: center;
+}
+
+
+/* Category Titles (Subheadings) */
+.category-title {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 3px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ab370;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #B0B0B0;
+    padding: 15px 0;
+}
+
+
+h1, h2 {
+    text-decoration: underline;
+}
+
+/* Grid Layout for Types of Bullying */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    background-color: #0f5f3d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Image Styling */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Overlay Effect */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
+    color: #fff; /* White text for better visibility */
+    font-size: 14px; /* Ensure readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay text when hovering */
+.card:hover .overlay {
+    opacity: 1; /* Makes text appear */
+}
+
+/* "How to Prevent Bullying?" Title */
+.prevent-title {
+    font-size: 26px; /* Slightly bigger */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px; /* Add spacing */
+    color: white; /* Keep contrast */
+}
+
+/* Four-Column Layout */
+.prevent-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px; /* Control width */
+    margin: 20px auto; /* Center it */
+    padding: 10px;
+}
+
+/* Individual Prevention Item */
+.prevent-item {
+    width: 23%; /* Each column takes 1/4 of space */
+    font-size: 16px;
+    color: white; /* Text in white */
+}
+
+/* Styling for links */
+.prevent-item a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FFD700; /* Yellow color */
+}
+/* Justify text in the "How to Prevent Bullying" section */
+.prevent-item {
+    text-align: justify;
+}
+
+/* Header */
+header {
+    background-color: #FFF;
+    color: green;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/* Container for logo image and text */
+.logo-container {
+    display: flex;
+    align-items: center; /* Aligns image and text side by side */
+    gap: 10px; /* Adds space between image and text */
+}
+
+/* Adjust STAM-BULLY logo size */
+header img {
+    height: 60px; /* Adjust height to fit header */
+    width: auto; /* Keep aspect ratio */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+
+/* Align logo and text */
+header {
+    display: flex;
+    align-items: center; /* Align items in the center */
+    gap: 10px; /* Space between logo and text */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.login-btn {
+    background-color: gold;
+    border: none;
+	
+	/* Container for logo image and text */
+.logo-container {
+    display: flex;
+    align-items: center; /* Aligns image and text side by side */
+    gap: 10px; /* Adds space between image and text */
+}
+
+/* Adjust STAM-BULLY logo size */
+header img {
+    height: 60px; /* Adjust height to fit header */
+    width: auto; /* Keep aspect ratio */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+	color: green;
+    margin: 0;
+	text-decoration: none;
+}
+/* Keep underline for all other links */
+nav a, .prevent-item a {
+    text-decoration: underline; /* Ensures other links keep their underline */
+}
+  /* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+    margin: 0;
+}
+  

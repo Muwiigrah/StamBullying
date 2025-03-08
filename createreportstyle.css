@@ -1,0 +1,196 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ab370;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	margin: 50px auto 0;
+}
+.header {
+    background: #04773A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+	
+}
+.note {
+    color: orange;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.wide {
+    grid-column: span 3;
+}
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+}
+.submit-btn {
+    background: #04773A;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    grid-column: span 3;
+}
+.submit-btn:hover {
+    background: #03582C;
+}
+/* Header */
+header {
+    background-color: #FFF;
+    color: green;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/* Container for logo image and text */
+.logo-container {
+    display: flex;
+    align-items: center; /* Aligns image and text side by side */
+    gap: 10px; /* Adds space between image and text */
+}
+
+/* Adjust STAM-BULLY logo size */
+header img {
+    height: 60px; /* Adjust height to fit header */
+    width: auto; /* Keep aspect ratio */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+
+/* Align logo and text */
+header {
+    display: flex;
+    align-items: center; /* Align items in the center */
+    gap: 10px; /* Space between logo and text */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Button Styles */
+.btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.login-btn {
+    background-color: gold;
+    border: none;																											} 
+
+.note {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.questions {
+    flex: 1;
+    text-align: left;
+}
+.board {
+    flex: 1;
+    background: #c8e6c9;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-top: 30px;
+}
+.post-it {
+    background: #ffeb3b;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: move;
+    transition: transform 0.2s ease;
+}
+.post-it:hover {
+    transform: scale(1.1);
+}
+
+input:focus, textarea:focus {
+    transform: scale(1.02);
+}
+input, textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}

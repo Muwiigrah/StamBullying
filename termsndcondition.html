@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <link rel="stylesheet" href="termsndcondition.css">
+</head>
+<body>
+
+    <!-- Terms & Conditions Popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="termsPopup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>TERMS & CONDITIONS</h2>
+        <h3>Welcome to Our Website</h3>
+        <p><strong>By using our platform, you agree with the following responsibilities:</strong></p>
+        <p>You are required to provide accurate and truthful information when submitting any reports. You will use the platform only for lawful and authorized purposes. You agree not to engage in any activity that could harm the integrity, functionality, or security of our website.</p>
+        <p><strong>Data Privacy:</strong></p>
+        <p>We take your privacy seriously. Any personal information you provide will be handled with care in accordance with our Privacy Policy. We will never share your data with third parties without your consent, unless required by law.</p>
+        <p>When you submit a report, it will be reviewed by our team. If the report is found to be valid, we will take appropriate action. You may be contacted for further clarification or to update you on the outcome of your submission.</p>
+        <div class="buttons">
+            <button class="accept" onclick="acceptTerms()">Accept</button>
+            <button class="reject" onclick="rejectTerms()">Reject</button>
+        </div>
+    </div>
+
+   <script src="termsndcondition.js"></script>
+
+</body>
+</html>
